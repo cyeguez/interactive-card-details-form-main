@@ -1,0 +1,107 @@
+@use '../base/var' as v;
+.card {
+  width: 100%;
+  height: 15rem;
+  background-image: url("../../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+
+  
+  &__front {
+    justify-self: center;
+    width: 17.875rem;
+    height: 9.8125rem;
+    border-radius: 0.3125rem;
+    background-image: url("../../images/bg-card-front.png");
+    background-size: cover;
+    padding: 1.125rem 1.25rem;
+    color: v.$white;
+    order: 2;
+    margin-left: 16px;
+    
+
+    &__logo {
+      width: 3.5rem;
+      height: 2rem;
+    }
+    .card__front__serial {
+      margin-top: 2.5rem;
+      font-size: 0.938em;
+    }
+    .card__front__data {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.625em;
+      
+      &__name-user {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .card__back {
+    position: relative;
+    align-self: center;
+    width: 17.875rem;
+    height: 9.8125rem;
+    margin-top: 32px;
+    background-image: url("../../images/bg-card-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    order: 1;
+    
+    
+    
+    &__cvc{
+      color: v.$white;
+      position: absolute;
+      font-size: 10px;     
+      right: 40px;
+      top: 70px;
+
+
+
+    }
+  }
+}
+
+.data {
+}
+.data__form {
+}
+.form__label {
+}
+.form__input {
+}
+.date__exp {
+}
+.date__exp__input {
+}
+.date__year {
+}
+.date__year__label {
+}
+.date__year__input {
+}
+.date__cvc {
+}
+.date__cvc__label {
+}
+.date__cvc__input {
+}
+.thank-you {
+}
+.thank-you__title {
+}
+.thank-you__content {
+}
+.thank-you__btn {
+}
+.attribution {
+}

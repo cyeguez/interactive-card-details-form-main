@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <!-- MY Style -->
+  <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+  <section class="container">
+    <div class="card">
+      <div class="card__front">
+        <div class="card__front__logo">
+          <img src="./images/card-logo.svg" class="front__logo__image" alt="Logo credit card">
+        </div>
+        <p class="card__front__serial">
+          <span id="seria1">0000</span>
+          <span id="seria2">0000</span>
+          <span id="seria3">0000</span>
+          <span id="seria4">0000</span>
+        </p>
+        <div class="card__front__data">
+          <p class="front__data__name-user">Jane Appleseed</p>
+          <p class="front__data__date">00/00</p>
+        </div>
+      </div>
+
+      <div class="card__back">
+        <p class="card__back__cvc">000</p>
+      </div>
+
+    </div>
+
+    <div class="data">
+      <form action="#" class="data__form">
+        <label for="nameUser" class="form__label">Cardholder Name</label> <br>
+        <input type="text" placeholder="e.g. Jane Appleseed" id="nameUser" name="name-user" class="form__name-user">
+        <span  class="form__error-name">Wrong formar, texts only</span>
+        <label for="cardNumber" class="form__label">Card Number</label> <br>
+        <input type="number" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber" name="card-number"
+          class="form__input">
+          <span  class="form-error-number">Wrong formar, numbers only</span>
+
+        <section data__date>
+          <div class="date__exp">
+            <label for="expInput" class=date__exp__label>Exp. Date</label>
+            <input type="number" placeholder="MM" id="expInput" name="Exp-date" class="date__exp__input">
+            <span  class="date__exp__error">Can't be blank</span>
+          </div>
+
+          <div class="date__year">
+            <label for="yearInput" class="date__year__label">(MM/YY)</label>
+            <input type="number" placeholder="YY" class="date__year__input" id="yearInput">
+            <span  class="date__year__error">Can't be blank</span>
+          </div>
+
+          <div class="date__cvc">
+            <label for="cvcLabel" class="date__cvc__label">(CVC)</label>
+            <input type="number" placeholder="
+          e.g. 123" class="date__cvc__input" id="cvcInput">
+          <span  class="date__cvc__error">Can't be blank</span>
+          </div>
+        </section>
+
+        <button type="submit">Confirm</button>
+
+      </form>
+    </div>
+
+    <div class="thank-you">
+      <h1 class="thank-you__title">Thank you!</h1>
+      <div class="thank-you__content">We've added your card details</div>
+      <button type="button" class="thank-you__btn">Continue</button>
+    </div>
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

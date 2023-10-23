@@ -1,0 +1,7 @@
+@use "../base/var" as v;
+body {
+  font-family: v.$fontF;
+  font-size: 16px;
+  font-weight: 500;
+  color: v.$very-dark-violet;
+}
