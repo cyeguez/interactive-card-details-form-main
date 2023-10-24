@@ -1,0 +1,29 @@
+.thank-you {
+  width: 100%;
+  margin-top: 5.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .thank-you__image{
+    width: 5.375rem;
+    height: 5.375rem;
+    background-image: url('../../images/icon-complete.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.625rem;
+    border: 1px solid red;
+  }
+  .thank-you__title {
+    font-size:1.625em ;
+    color: v.$very-dark-violet;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+
+  }
+  .thank-you__content {
+  }
+  .thank-you__btn {
+    background-color: v.$very-dark-violet;
+  }
+}

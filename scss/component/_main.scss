@@ -1,107 +1,127 @@
-@use '../base/var' as v;
-.card {
-  width: 100%;
-  height: 15rem;
-  background-image: url("../../images/bg-main-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  
-  
-  
-
-  
-  &__front {
-    justify-self: center;
-    width: 17.875rem;
-    height: 9.8125rem;
-    border-radius: 0.3125rem;
-    background-image: url("../../images/bg-card-front.png");
+@use "../base/var" as v;
+.container {
+  .card {
+    width: 100%;
+    height: 240px;
+    background-image: url("../../images/bg-main-mobile.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 1.125rem 1.25rem;
-    color: v.$white;
-    order: 2;
-    margin-left: 16px;
-    
+    display: flex;
+    flex-direction: column;
 
-    &__logo {
-      width: 3.5rem;
-      height: 2rem;
+    &__back {
+      position: absolute;
+      width: 286px;
+      height: 157px;
+      margin-top: 2rem;
+      margin-left: 4.5rem;
+      background-image: url("../../images/bg-card-back.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+
+      &__cvc {
+        color: v.$white;
+        position: absolute;
+        font-size: .625rem;
+        right: 2.5rem;
+        top: 4.375rem;
+      }
     }
-    .card__front__serial {
-      margin-top: 2.5rem;
-      font-size: 0.938em;
-    }
-    .card__front__data {
-      margin-top: 22px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 0.625em;
-      
-      &__name-user {
-        text-transform: uppercase;
+
+    &__front {
+      width: 286px;
+      height: 157px;
+      border-radius: 5px;
+      background-image: url("../../images/bg-card-front.png");
+      background-size: cover;
+      padding: 1.125rem 20px;
+      color: v.$white;
+      margin-left: 16px;
+      margin-top: 120px;
+      z-index: 2;
+
+      &__logo {
+        width: 56px;
+        height: 32px;
+      }
+      .card__front__serial {
+        margin-top: 40px;
+        font-size: 0.938em;
+      }
+      .card__front__data {
+        margin-top: 1.375rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.625em;
+
+        &__name-user {
+          text-transform: uppercase;
+        }
       }
     }
   }
-  .card__back {
-    position: relative;
-    align-self: center;
-    width: 17.875rem;
-    height: 9.8125rem;
-    margin-top: 32px;
-    background-image: url("../../images/bg-card-back.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    order: 1;
-    
-    
-    
-    &__cvc{
+  .data {
+    margin-top: 5.625rem;
+    padding-inline: 1.5rem;
+
+    .data__form {
+      
+      .form__field {
+        margin-bottom: 1.375rem;
+        .form__field__label {
+          font-size: 0.75em;
+          text-transform: uppercase;
+          color: v.$very-dark-violet;
+          letter-spacing: 1px;
+          display: inline;
+        }
+        .form__field__input {
+          width: 100%;
+          height: 2.75rem;
+          border: 1px solid v.$light-grayish-violet;
+          border-radius: 5px;
+          padding-left: 1rem;
+
+          &::placeholder {
+            color: v.$light-grayish-violet;
+          }
+        }
+        
+
+        .form__field__error {
+          color: v.$errorInput;
+          font-size: 0.625em;
+        }      
+        
+        
+      }
+      .form__group {
+        display: flex;
+        
+        .form__field__input--small {
+          width: 72px;
+          margin-right: 12px;
+        }
+
+        .form__field__input--medium {
+          width: 140px;
+          
+        }
+
+
+        
+      }
+    }
+
+    .form__btn {
+      background-color: v.$very-dark-violet;
       color: v.$white;
-      position: absolute;
-      font-size: 10px;     
-      right: 40px;
-      top: 70px;
-
-
-
+      width: 100%;
+      padding-block: 15px;
+      border-radius: .3125rem;
     }
   }
-}
-
-.data {
-}
-.data__form {
-}
-.form__label {
-}
-.form__input {
-}
-.date__exp {
-}
-.date__exp__input {
-}
-.date__year {
-}
-.date__year__label {
-}
-.date__year__input {
-}
-.date__cvc {
-}
-.date__cvc__label {
-}
-.date__cvc__input {
-}
-.thank-you {
-}
-.thank-you__title {
-}
-.thank-you__content {
-}
-.thank-you__btn {
-}
-.attribution {
+  
 }

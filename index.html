@@ -18,6 +18,11 @@
 <body>
   <section class="container">
     <div class="card">
+
+      <div class="card__back">
+        <p class="card__back__cvc">000</p>
+      </div>
+
       <div class="card__front">
         <div class="card__front__logo">
           <img src="./images/card-logo.svg" class="front__logo__image" alt="Logo credit card">
@@ -34,54 +39,59 @@
         </div>
       </div>
 
-      <div class="card__back">
-        <p class="card__back__cvc">000</p>
-      </div>
-
     </div>
 
     <div class="data">
       <form action="#" class="data__form">
-        <label for="nameUser" class="form__label">Cardholder Name</label> <br>
-        <input type="text" placeholder="e.g. Jane Appleseed" id="nameUser" name="name-user" class="form__name-user">
-        <span  class="form__error-name">Wrong formar, texts only</span>
-        <label for="cardNumber" class="form__label">Card Number</label> <br>
-        <input type="number" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber" name="card-number"
-          class="form__input">
-          <span  class="form-error-number">Wrong formar, numbers only</span>
 
-        <section data__date>
-          <div class="date__exp">
-            <label for="expInput" class=date__exp__label>Exp. Date</label>
-            <input type="number" placeholder="MM" id="expInput" name="Exp-date" class="date__exp__input">
-            <span  class="date__exp__error">Can't be blank</span>
+        <div class="form__field">
+          <label for="nameUser" class="form__field__label">Cardholder Name</label> <br>
+          <input type="text" placeholder="e.g. Jane Appleseed" id="nameUser" name="name-user"
+            class="form__field__input">
+          <span class="form__field__error">Wrong formar, texts only</span>
+        </div>
+        <div class="form__field ">
+          <label for="cardNumber" class="form__field__label">Card Number</label> <br>
+          <input type="number" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber" name="card-number"
+            class="form__field__input">
+          <span class="form__field__error">Wrong formar, numbers only</span>
+        </div>
+
+        <section class="form__group">
+          <div class="form__field">
+            <label for="expInput" class=form__fiel__label>Exp. Date</label>
+            <input type="number" placeholder="MM" id="expInput" name="Exp-date"
+              class="form__field__input form__field__input--small">
+            <span class="form__field__error">Can't be blank</span>
           </div>
 
-          <div class="date__year">
-            <label for="yearInput" class="date__year__label">(MM/YY)</label>
-            <input type="number" placeholder="YY" class="date__year__input" id="yearInput">
-            <span  class="date__year__error">Can't be blank</span>
+          <div class="form__field">
+            <label for="yearInput" class="form__field__label">(MM/YY)</label>
+            <input type="number" placeholder="YY" class="form__field__input form__field__input--small" id="yearInput">
+            <span class="form__field__error">Can't be blank</span>
           </div>
 
-          <div class="date__cvc">
-            <label for="cvcLabel" class="date__cvc__label">(CVC)</label>
-            <input type="number" placeholder="
-          e.g. 123" class="date__cvc__input" id="cvcInput">
-          <span  class="date__cvc__error">Can't be blank</span>
+          <div class="form__field">
+            <label for="cvcLabel" class="form__field__label">CVC</label>
+            <input type="number" placeholder="e.g. 123" class="form__field__input form__field__input--medium"
+              id="cvcInput">
+            <span class="form__field__error">Can't be blank</span>
           </div>
         </section>
 
-        <button type="submit">Confirm</button>
+        <button class="form__btn" type="submit">Confirm</button>
 
       </form>
     </div>
-
+    
     <div class="thank-you">
+      <div class="thank-you__image"></div>
       <h1 class="thank-you__title">Thank you!</h1>
       <div class="thank-you__content">We've added your card details</div>
       <button type="button" class="thank-you__btn">Continue</button>
     </div>
   </section>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
