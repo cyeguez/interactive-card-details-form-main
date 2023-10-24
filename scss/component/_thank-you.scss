@@ -1,9 +1,13 @@
+@use '../base/var' as v;
+
 .thank-you {
   width: 100%;
   margin-top: 5.625rem;
+  padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: none;
 
   .thank-you__image{
     width: 5.375rem;
@@ -12,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 1.625rem;
-    border: 1px solid red;
+    
   }
   .thank-you__title {
     font-size:1.625em ;
@@ -22,8 +26,14 @@
 
   }
   .thank-you__content {
+    margin-bottom: 26px;
   }
   .thank-you__btn {
     background-color: v.$very-dark-violet;
+      color: v.$white;
+      width: 100%;
+      padding-block: 15px;
+      border-radius: .3125rem;
+      cursor: pointer;
   }
 }
