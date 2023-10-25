@@ -20,70 +20,68 @@
     <div class="card">
 
       <div class="card__back">
-        <p class="card__back__cvc">000</p>
+        <p class="card__back__cvc" id="cvcCod">000</p>
       </div>
 
       <div class="card__front">
         <div class="card__front__logo">
           <img src="./images/card-logo.svg" class="front__logo__image" alt="Logo credit card">
         </div>
-        <p class="card__front__serial">
-          <span id="seria1">0000</span>
-          <span id="seria2">0000</span>
-          <span id="seria3">0000</span>
-          <span id="seria4">0000</span>
+        <p class="card__front__serial" id="cardSerial">
+          0000 0000 0000 0000
+
         </p>
-        <div class="card__front__data">
-          <p class="front__data__name-user">Jane Appleseed</p>
-          <p class="front__data__date">00/00</p>
+        <div class="card__front__data" id="data">
+          <p class="front__data__name-user" id="cardUser">Jane Appleseed</p>
+          <p class="front__data__date" id="Exp-date"><span id="month">00</span>/<span id="year">00</span></p>
         </div>
       </div>
 
     </div>
 
-    <div class="data">
+    <div class="data" >
       <form action="#" class="data__form">
 
         <div class="form__field  ">
           <label for="nameUser" class="form__field__label">Cardholder Name</label> <br>
-          <input type="text" placeholder="e.g. Jane Appleseed" id="nameUser" name="name-user"
+          <input type="text" required autocomplete="off" placeholder="e.g. Jane Appleseed" id="nameUser" name="name-user"
             class="form__field__input">
           <span class="form__field__error">Wrong formar, texts only</span>
         </div>
         <div class="form__field ">
           <label for="cardNumber" class="form__field__label">Card Number</label> <br>
-          <input type="number" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber" name="card-number"
-            class="form__field__input">
+          <input type="text" required autocomplete="off" maxlength="19" placeholder=" e.g. 1234 5678 9123 0000" id="cardNumber"
+            name="card-number" class="form__field__input">
           <span class="form__field__error">Wrong formar, numbers only</span>
         </div>
 
         <section class="form__group">
           <div class="form__field  ">
             <label for="expInput" class=form__fiel__label>Exp. Date</label>
-            <input type="number" placeholder="MM" id="expInput" name="Exp-date"
+            <input type="number" required autocomplete="off" placeholder="MM" min="1" max="12" id="monthInput"  name="Exp-date"
               class="form__field__input form__field__input--small">
             <span class="form__field__error">Can't be blank</span>
           </div>
 
           <div class="form__field ">
             <label for="yearInput" class="form__field__label">(MM/YY)</label>
-            <input type="number" placeholder="YY" class="form__field__input form__field__input--small" id="yearInput">
+            <input type="number" required autocomplete="off"  placeholder="YY" class="form__field__input form__field__input--small" id="yearInput">
             <span class="form__field__error">Can't be blank</span>
           </div>
 
           <div class="form__field ">
             <label for="cvcLabel" class="form__field__label">CVC</label>
-            <input type="number" placeholder="e.g. 123" class="form__field__input form__field__input--medium"
+            <input type="number" required autocomplete="off"  placeholder="e.g. 123" class="form__field__input form__field__input--medium"
               id="cvcInput">
             <span class="form__field__error">Can't be blank</span>
           </div>
         </section>
 
-        <button class="form__btn" type="submit">Confirm</button>
+        <button class="form__btn" type="submit" id="btn-form">Confirm</button>
 
       </form>
     </div>
-    
+
     <div class="thank-you">
       <div class="thank-you__image"></div>
       <h1 class="thank-you__title">Thank you!</h1>
@@ -97,6 +95,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">César Yeguez</a>.
   </div>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>

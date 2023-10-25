@@ -169,7 +169,7 @@
   body .container .card__front .card__front__serial {
     margin-top: 2.5rem;
     font-size: 1.563em;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
   body .container .card__front .card__front__data {
     margin-top: 2.1875rem;
@@ -224,6 +224,7 @@
   }
   body .container .data .data__form .form__field.error .form__field__input {
     border-color: hsl(0, 100%, 66%);
+    outline: none;
   }
   body .container .data .data__form .form__field.error .form__field__error {
     display: inline;
@@ -239,7 +240,7 @@
 }
 .thank-you {
   width: 100%;
-  margin-top: 5.625rem;
+  margin-top: 5rem;
   padding-inline: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -258,20 +259,44 @@
   font-size: 1.625em;
   color: hsl(278, 68%, 11%);
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+  text-align: center;
 }
 .thank-you .thank-you__content {
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+  color: hsl(279, 6%, 55%);
+  text-align: center;
 }
 .thank-you .thank-you__btn {
   background-color: hsl(278, 68%, 11%);
   color: hsl(0, 0%, 100%);
   width: 100%;
-  padding-block: 15px;
-  border-radius: 0.3125rem;
+  padding-block: 0.9375rem;
+  border-radius: 5px;
   cursor: pointer;
 }
 
+@media screen and (min-width: 48rem) {
+  .thank-you {
+    width: 23.8125rem;
+    margin-top: 19.375rem;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 18.75rem;
+    display: none;
+  }
+  .thank-you .thank-you__image {
+    margin: 0 auto;
+  }
+  .thank-you .thank-you__title {
+    width: 100%;
+    margin-top: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.875rem;
+  }
+}
 .attribution {
   width: 100%;
   margin-top: 40px;
