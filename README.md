@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Preview mode desktop](./assets/screenshot/Preview-desktop.png)
-![Preview mode mobile](./assets/screenshot/Preview-mobile.png)
+![Preview mode desktop](./screenshot/Desktop.png)
+![Preview mode mobile](./screenshot/Mobile.png)
 
 
 

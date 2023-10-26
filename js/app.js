@@ -105,6 +105,6 @@ btnForm.addEventListener("click", (e) => {
     e.preventDefault();
   } else {
     form.style.display = "none ";
-    thanyou.style.display = "inline";
+    thanyou.style.display = "flex";
   }
 });

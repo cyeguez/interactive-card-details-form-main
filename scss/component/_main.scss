@@ -55,17 +55,16 @@
         align-items: center;
         justify-content: space-between;
         font-size: 0.625em;
+        text-transform: uppercase;
 
-        &__name-user {
-          text-transform: uppercase;
-        }
+        
       }
     }
   }
   .data {
     margin-top: 90px;
     padding-inline: 24px;
-
+    
     .data__form {
       .form__field {
         margin-bottom: 22px;

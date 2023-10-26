@@ -52,8 +52,6 @@
   align-items: center;
   justify-content: space-between;
   font-size: 0.625em;
-}
-.container .card__front .card__front__data__name-user {
   text-transform: uppercase;
 }
 .container .data {
