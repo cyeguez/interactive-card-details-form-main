@@ -1,8 +1,8 @@
-# Frontend Mentor - Notifications page solution
+# Frontend Mentor - Interactive card details form
 
  Hello!! 🤟🤟, welcome to my repo, thanks for stopping by here.
 
-This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Notifications page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC).  
 
 ## Table of contents
 
@@ -17,16 +17,21 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 
 ## Overview
-The project consists of building a notification system, this must indicate how many comments are unread, and change status when clicking.
+
+The challenge is to create a form that is also reflected on a credit card.
 
 ### The challenge
 
 Users should be able to:
+-Ingresar datos en un formulario.
+-The form must validate the data provided and notify you if the data is wrong.
+-Users should see the data entered reflected on the credit card.
+-The form should not be sent empty.
+-When submitting the form, users should see another screen notifying that it was submitted correctly.
 
-- Distinguish between "unread" and "read" notifications
-- Select "Mark all as read" to toggle the visual state of the unread notifications and set the number of unread messages to zero
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+
+
+
 
 ### Screenshot
 
@@ -40,7 +45,7 @@ Users should be able to:
 
 
 ### Links
-<a href="https://cyeguez.github.io/notifications-page-main/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+<a href="https://cyeguez.github.io/interactive-card-details-form-main/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
 
 
 
@@ -74,10 +79,11 @@ Users should be able to:
 ### What I learned
 
 
-I learned to assign styles to grandchildren when grandpa has a specific class
+
+This project forced me to read regular expressions.
 
 ```
-.publication.active .publication__content span {}
+ inputMonth.value = inputMonth.value.replace(/\s/g, "");
 ```
 
 
